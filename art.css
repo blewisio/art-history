@@ -1,0 +1,111 @@
+.arts {
+    padding: 20px;
+}
+
+.composition {
+    margin-top: 36px;
+    margin-left: 40px;
+    background: linear-gradient(rgb(250, 250, 240), rgb(250, 250, 250));
+    width: 300px;
+    height: 610px;
+    position: relative;
+}
+
+.square {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+}
+
+.red-square {
+    background: rgb(205, 16, 16);
+}
+
+.top-red-square {
+    top: 50px;
+}
+
+.black-square {
+    background: rgb(16, 16, 16);
+}
+
+.middle-black-square {
+    top: 280px;
+}
+
+.bottom-black-square {
+    top: 480px;
+}
+
+.bottom-red-square {
+    top: 390px;
+}
+
+.blue-rectangle {
+    position: absolute;
+    background: rgb(32, 74, 170);
+    width: 22px;
+    height: 108px;
+    top: 502px;
+}
+
+.black-line {
+    width: 8px;
+    height: 610px;
+    position: absolute;
+    background: rgb(16, 16, 16);
+}
+
+.left-black-line {
+    left: 22px;
+}
+
+.right-black-line {
+    left: 150px;
+}
+
+.yellow-rectangle {
+    width: 142px;
+    height: 61px;
+    background: rgb(240, 210, 0);
+    position: absolute;
+    left: 158px;
+}
+
+.horizontal-black-line {
+    position: absolute;
+    left: 158px;
+    background: rgb(16, 16, 16);
+    height: 10px;
+    width: 142px;
+}
+
+.top-black-line {
+    top: 61px;
+}
+
+.middle-black-line {
+    top: 284px;
+}
+
+.bottom-black-line {
+    top: 484px;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 60%;
+}
+
+.red-wedge {
+    padding-left: 100px;
+}
+
+.red-triangle {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 0 80px 340px 80px;
+    border-color: transparent transparent rgb(250, 0, 0) transparent;
+    -webkit-transform: rotate(110deg);
+}
