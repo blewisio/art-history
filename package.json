@@ -1,0 +1,12 @@
+{
+  "name": "art-history",
+  "version": "0.1.0",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.10"
+  }
+}
