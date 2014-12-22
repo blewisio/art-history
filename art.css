@@ -1,6 +1,10 @@
 .arts {
   padding: 20px; }
 
+.title {
+  margin-top: 20px;
+  font-size: 60%; }
+
 .composition {
   margin-top: 36px;
   margin-left: 40px;
@@ -9,82 +13,99 @@
   height: 610px;
   position: relative; }
 
-.square {
+.composition .square {
   width: 22px;
   height: 22px;
   position: absolute; }
-
-.red-square {
+.composition .red-square {
   background: #cd1010; }
-
-.top-red-square {
+.composition .top-red-square {
   top: 50px; }
-
-.black-square {
+.composition .black-square {
   background: #101010; }
-
-.middle-black-square {
+.composition .middle-black-square {
   top: 280px; }
-
-.bottom-black-square {
+.composition .bottom-black-square {
   top: 480px; }
-
-.bottom-red-square {
+.composition .bottom-red-square {
   top: 390px; }
-
-.blue-rectangle {
+.composition .blue-rectangle {
   position: absolute;
   background: #204aaa;
   width: 22px;
   height: 108px;
   top: 502px; }
-
-.black-line {
+.composition .black-line {
   width: 8px;
   height: 610px;
   position: absolute;
   background: #101010; }
-
-.left-black-line {
+.composition .left-black-line {
   left: 22px; }
-
-.right-black-line {
+.composition .right-black-line {
   left: 150px; }
-
-.yellow-rectangle {
+.composition .yellow-rectangle {
   width: 142px;
   height: 61px;
   background: #f0d200;
   position: absolute;
   left: 158px; }
-
-.horizontal-black-line {
+.composition .horizontal-black-line {
   position: absolute;
   left: 158px;
   background: #101010;
   height: 10px;
   width: 142px; }
-
-.top-black-line {
+.composition .top-black-line {
   top: 61px; }
-
-.middle-black-line {
+.composition .middle-black-line {
   top: 284px; }
-
-.bottom-black-line {
+.composition .bottom-black-line {
   top: 484px; }
 
-.title {
-  margin-top: 20px;
-  font-size: 60%; }
-
 .red-wedge {
-  padding-left: 100px; }
+  padding-left: 100px;
+  width: 500px;
+  height: 400px;
+  background: #fafafa;
+  position: relative;
+  overflow: hidden; }
 
-.red-triangle {
+.red-wedge .red-triangle {
   height: 0;
   width: 0;
   border-style: solid;
-  border-width: 0 80px 340px 80px;
+  border-width: 0 80px 330px 80px;
   border-color: transparent transparent #fa0000 transparent;
-  -webkit-transform: rotate(110deg); }
+  -webkit-transform: rotate(110deg);
+  position: absolute;
+  left: 170px;
+  top: 20px;
+  z-index: 4; }
+.red-wedge .black-slanted {
+  background: #101010;
+  -webkit-transform: rotate(24deg);
+  width: 400px;
+  position: absolute;
+  top: -20px;
+  left: 310px;
+  height: 550px;
+  z-index: 2; }
+.red-wedge .white-circle {
+  background: #fafafa;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 280px;
+  top: 113.33333px;
+  z-index: 3; }
+.red-wedge .large-gray-rectangle {
+  width: 110px;
+  height: 70px;
+  -webkit-transform: rotate(-40deg);
+  background: rgba(200, 200, 200, 0.9);
+  position: absolute;
+  left: 275px;
+  top: 70px;
+  z-index: 1; }

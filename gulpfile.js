@@ -10,4 +10,6 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('default', ['styles']);
+gulp.task('default', [], function () {
+    gulp.watch(cssSrc, ['styles']);
+});
