@@ -17,7 +17,7 @@ $black: rgb(16, 16, 16);
     width: 300px;
     height: 610px;
     position: relative;
-    // display: none; /* temporary hide */
+    display: none; /* temporary hide */
 }
 
 .composition {
@@ -116,12 +116,14 @@ $red-wedge-width: 500px;
 }
 
 .red-wedge {
+    $red: rgb(250, 0, 0);
+
     .red-triangle {
         height: 0;
         width: 0;
         border-style: solid;
         border-width: 0 80px 330px 80px;
-        border-color: transparent transparent rgb(250, 0, 0) transparent;
+        border-color: transparent transparent $red transparent;
         -webkit-transform: rotate(110deg);
         position: absolute;
         left: 170px;
@@ -165,6 +167,41 @@ $red-wedge-width: 500px;
     }
 
     .small-gray-rectangle {
+        background: $gray;
+        height: 65px;
+        width: 70px;
+        position: absolute;
+        left: $red-wedge-width / 2 + 10px;
+        top: $red-wedge-height / 2 + 40px;
+    }
 
+    $red-lines-top: $red-wedge-height / 4 * 3;
+    .small-red-rectangle {
+        background: $red;
+        width: 15px;
+        height: 40px;
+        position: absolute;
+        left: $red-wedge-width / 3;
+        top: $red-lines-top;
+    }
+
+    .tiny-red-line {
+        background: $red;
+        width: 15px;
+        height: 3px;
+        position: absolute;
+        left: $red-wedge-width / 3 + 20px;
+    }
+
+    .red-line-1 {
+        top: $red-lines-top + 4px;
+    }
+
+    .red-line-2 {
+        top: $red-lines-top + 14px;
+    }
+
+    .red-line-3 {
+        top: $red-lines-top + 24px;
     }
 }
