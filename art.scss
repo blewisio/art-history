@@ -2,6 +2,10 @@ body {
     font-family: 'Open Sans';
 }
 
+.page-title {
+    margin-bottom: 20px;
+}
+
 $canvas-color: rgb(250, 250, 250);
 $black: rgb(16, 16, 16);
 
@@ -268,5 +272,311 @@ $red-wedge-width: 500px;
         margin-left: 2px;
         margin-right: 1px;
         box-shadow: inset 0 0 20px 4px rgba(150, 150, 150, 0.4);
+    }
+}
+
+.red-tower {
+    width: 800px;
+    height: 580px;
+    position: relative;
+    overflow: hidden;
+    // -webkit-filter: grayscale(25%);
+}
+
+.red-tower {
+    $border: 1px rgb(32, 32, 32) solid;
+    .sky {
+        background: linear-gradient(rgb(2, 30, 32), rgb(25, 65, 95), rgb(120, 180, 185));
+        width: 100%;
+        height: 380px;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .light-ground {
+        border-radius: 100%;
+        width: 900px;
+        margin-left: -50px;
+        margin-top: -25px;
+        height: 160px;
+        background: rgb(175, 115, 30);
+        z-index: 3;
+        position: absolute;
+        top: 65%;
+        border-top: $border;
+    }
+
+    .shadow-ground {
+        background: rgb(50, 35, 3);
+        z-index: 4;
+        height: 250px;
+        width: 100%;
+        position: absolute;
+        top: 70%;
+    }
+
+    $tower-color: linear-gradient(to right, rgb(45, 40, 25), rgb(180, 100, 70), rgb(180, 100, 70));
+    $tower-width: 170px;
+    .tower {
+        width: $tower-width;
+        height: 200px;
+        left: 38%;
+        z-index: 2;
+        background: $tower-color;
+        position: absolute;
+        top: 35%;
+        border-left: $border;
+        border-right: $border;
+    }
+
+    .tower-top {
+        border-radius: 100%;
+        width: $tower-width;
+        height: 80px;
+        z-index: 2;
+        left: 38%;
+        top: 28%;
+        background: $tower-color;
+        position: absolute;
+        border-top: $border;
+    }
+
+    $tower-door-color: rgb(32, 32, 32);
+    .tower-door {
+        position: absolute;
+        width: 15px;
+        height: 30px;
+        background: $tower-door-color;
+        z-index: 3;
+        top: 55.9%;
+        left: 55%;
+    }
+
+    .tower-door-top {
+        position: absolute;
+        border-radius: 100%;
+        width: 15px;
+        height: 15px;
+        background: $tower-door-color;
+        z-index: 3;
+        top: 55%;
+        left: 55%;
+    }
+
+    .left-wall {
+        border-bottom: 150px solid rgb(40, 30, 2);
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        -webkit-transform: rotate(90deg);
+        height: 0;
+        width: 350px;
+        position: absolute;
+        top: 27%;
+        left: -250px;
+        z-index: 4;
+    }
+
+    .right-wall {
+        border-bottom: 200px solid rgb(40, 30, 2);
+        border-left: 230px solid transparent;
+        border-right: 100px solid transparent;
+        -webkit-transform: rotate(-90deg);
+        height: 0;
+        width: 450px;
+        position: absolute;
+        top: 25%;
+        left: 45%;
+        z-index: 4;
+    }
+
+    $hill-color: rgb(90, 95, 70);
+    $hill-glow: rgba(240, 200, 200, 0.6);
+    .left-hill {
+        border-radius: 50%;
+        position: absolute;
+        background: $hill-color;
+        width: 110px;
+        height: 30px;
+        z-index: 1;
+        top: 58.5%;
+        left: 18%;
+        border-top: $border;
+        -webkit-transform: rotate(-4deg);
+        box-shadow: 0 -2px 20px 3px $hill-glow;
+    }
+
+    .left-middle-hill {
+        border-radius: 80%;
+        position: absolute;
+        background: $hill-color;
+        width: 100px;
+        height: 60px;
+        z-index: 1;
+        top: 56.5%;
+        left: 32%;
+        border-top: $border;
+        -webkit-transform: rotate(-4deg);
+        box-shadow: 0 -2px 20px 3px $hill-glow;
+    }
+
+    $statue-color: rgb(203, 205, 200);
+    .statue-base {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: $statue-color;
+        border: $border;
+        top: 48%;
+        left: 75%;
+        z-index: 3;
+        -webkit-transform: rotate(1deg);
+    }
+
+    $statue-shadow-color: rgba(30, 30, 30, 0.8);
+    .statue-base-shadow {
+        position: absolute;
+        background: $statue-shadow-color;
+        width: 15px;
+        height: 90px;
+        top: 49.8%;
+        left: 73.2%;
+        z-index: 3;
+        -webkit-transform: rotate(1deg);
+    }
+
+    .statue-base-shadow-top {
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        position: absolute;
+        z-index: 3;
+        border-bottom: 12px solid $statue-shadow-color;
+        top: 48.5%;
+        left: 73.2%;
+        -webkit-transform: rotate(135deg);
+    }
+
+    .statue-foundation {
+        position: absolute;
+        background: $statue-color;
+        border: $border;
+        width: 105px;
+        height: 6px;
+        top: 65.3%;
+        left: 72.2%;
+        z-index: 3;
+        -webkit-transform: rotate(1deg);
+    }
+
+    .statue-foundation-shadow {
+        position: absolute;
+        background: $statue-shadow-color;
+        width: 25px;
+        height: 13px;
+        top: 64.6%;
+        left: 69.2%;
+        z-index: 3;
+        -webkit-transform: rotate(1deg);
+    }
+
+    .horse-shadow {
+        position: absolute;
+        background: $statue-shadow-color;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 60%;
+        width: 247px;
+        height: 13px;
+        top: 64.4%;
+        left: 38.5%;
+        z-index: 3;
+    }
+
+    .horse-down-leg {
+        background: $statue-shadow-color;
+        position: absolute;
+        z-index: 3;
+        width: 7px;
+        height: 40px;
+        top: 41.5%;
+        left: 75%;
+        -webkit-transform: rotate(15deg);
+        display: none;
+    }
+
+    .horse-raised-leg-bottom {
+        background: $statue-shadow-color;
+        position: absolute;
+        z-index: 3;
+        width: 7px;
+        height: 32px;
+        border-radius: 5%;
+        top: 41%;
+        left: 72.8%;
+        -webkit-transform: rotate(-8deg);
+        display: none;
+    }
+
+    .horse-raised-leg-top {
+        background: $statue-shadow-color;
+        position: absolute;
+        z-index: 3;
+        width: 35px;
+        height: 8px;
+        border-radius: 15%;
+        top: 40.5%;
+        left: 72.5%;
+        -webkit-transform: rotate(5deg);
+        display: none;
+    }
+
+    .horse-body {
+        background: rgb(25, 25, 25);
+        position: absolute;
+        border-radius: 45%;
+        z-index: 3;
+        width: 75px;
+        height: 45px;
+        top: 35.5%;
+        left: 74.5%;
+        -webkit-transform: rotate(5deg);
+        display: none;
+    }
+
+    .left-house-front {
+        background: rgb(70, 70, 70);
+        position: absolute;
+        z-index: 3;
+        width: 20px;
+        height: 13px;
+        top: 59%;
+        left: 30%;
+        -webkit-transform: rotate(-5deg);
+        border: 1px solid rgba(50, 50, 50, 0.9);
+    }
+
+    .left-house-front-roof {
+        position: absolute;
+        border-top: 10px solid rgb(120, 32, 32);
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        z-index: 3;
+        width: 0;
+        height: 0;
+        top: 57.3%;
+        left: 29.8%;
+        -webkit-transform: rotate(-184deg);
+    }
+
+    .left-house-side {
+        background: rgb(180, 180, 180);
+        position: absolute;
+        z-index: 3;
+        width: 20px;
+        height: 13px;
+        top: 58.7%;
+        left: 32.5%;
+        -webkit-transform: rotate(-4deg);
+        border: 1px solid rgba(50, 50, 50, 0.9);
     }
 }
