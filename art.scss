@@ -544,27 +544,39 @@ $red-wedge-width: 500px;
     }
 
     .left-house-front {
-        background: rgb(70, 70, 70);
+        background: rgb(80, 70, 70);
         position: absolute;
         z-index: 3;
-        width: 20px;
+        width: 24px;
         height: 13px;
         top: 59%;
-        left: 30%;
+        left: 29.8%;
         -webkit-transform: rotate(-5deg);
+        border: 1px solid rgba(50, 50, 50, 0.9);
+    }
+
+    .left-house-front-door {
+        background: rgb(30, 30, 30);
+        position: absolute;
+        z-index: 3;
+        width: 7px;
+        height: 7px;
+        top: 60%;
+        left: 30.7%;
+        -webkit-transform: rotate(-4deg);
         border: 1px solid rgba(50, 50, 50, 0.9);
     }
 
     .left-house-front-roof {
         position: absolute;
-        border-top: 10px solid rgb(120, 32, 32);
+        border-top: 9px solid rgb(120, 32, 32);
         border-left: 12px solid transparent;
         border-right: 12px solid transparent;
         z-index: 3;
         width: 0;
         height: 0;
-        top: 57.3%;
-        left: 29.8%;
+        top: 57.5%;
+        left: 29.7%;
         -webkit-transform: rotate(-184deg);
     }
 

@@ -405,25 +405,35 @@ body {
   -webkit-transform: rotate(5deg);
   display: none; }
 .red-tower .left-house-front {
-  background: #464646;
+  background: #504646;
   position: absolute;
   z-index: 3;
-  width: 20px;
+  width: 24px;
   height: 13px;
   top: 59%;
-  left: 30%;
+  left: 29.8%;
   -webkit-transform: rotate(-5deg);
+  border: 1px solid rgba(50, 50, 50, 0.9); }
+.red-tower .left-house-front-door {
+  background: #1e1e1e;
+  position: absolute;
+  z-index: 3;
+  width: 7px;
+  height: 7px;
+  top: 60%;
+  left: 30.7%;
+  -webkit-transform: rotate(-4deg);
   border: 1px solid rgba(50, 50, 50, 0.9); }
 .red-tower .left-house-front-roof {
   position: absolute;
-  border-top: 10px solid #782020;
+  border-top: 9px solid #782020;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   z-index: 3;
   width: 0;
   height: 0;
-  top: 57.3%;
-  left: 29.8%;
+  top: 57.5%;
+  left: 29.7%;
   -webkit-transform: rotate(-184deg); }
 .red-tower .left-house-side {
   background: #b4b4b4;
